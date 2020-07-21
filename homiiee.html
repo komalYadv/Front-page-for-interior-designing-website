@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <title>
+         Homiiee-Design and decorate your home
+     </title>
+       <link rel="icon" type="image/icon" href="house.png">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="homiiee.css">
+      <script src="https://kit.fontawesome.com/41f35c7692.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <!--welcome section start-->
+    <div class="container-fluid p-0">
+      <h1 class="slogan">Homiiee helps you to make your home 👉 sweet home 🏘️....</h1>
+    </div>
+    <!--End of welcome section-->
+
+    <!--Notification and Search Section Start-->
+    <div class="container-fluid main1">    
+      <div class="row search p-0">
+
+        <!--home icon column start-->
+        <div class="col-lg-3">
+          <i class="fas fa-home"  id="hmicon">Homiiee </i>
+        </div>
+        <!--home icon column end-->
+
+        <!--Search-bar column start-->
+        <div class="col-lg-3">
+          <div class="search-bar">
+              <input type="search" placeholder="ideas to decorate and design your home....">
+              <button class="search-button"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <!--search-bar column end-->
+
+        <!--notification icons column start-->
+        <div class="col-lg-3 icn"> 
+          <span class="tool" data-tip="Notifications" tabindex="1"><i class="far fa-bell ICONS" ></i></span>
+          <span class="tool" data-tip=" ShoppingCart" tabindex="2"> <i class="fas fa-shopping-cart ICONS"></i></span>
+          <span class="tool" data-tip="NeedGuidance" tabindex="3"> <i class="fas fa-question-circle ICONS" ></i></span>
+          <span class="tool" data-tip="YourWishlist" tabindex="4"> <i class="far fa-heart ICONS" ></i></span>
+        </div>
+        <!--notification icons column end-->
+       <div class="col-lg-3">
+         <!--main button-->
+         <button onclick="document.getElementById('modalLogin').style.display='block'" class="modalButton">LogIn/SignUp</button>
+        
+         <!--modal start-->
+          <div id="modalLogin" class="modal">
+            <form class="modal-content animate" action="#"  method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('modalLogin').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+              <div class="container form-container">
+                <img src="komal.jpg" class="avatar">
+                <br>
+                <label>Name:</label>
+                <br>
+               <input type="text" placeholder="Enter your name" style="margin: unset;">
+               <br><br>
+               <label>Email:</label>
+               <br>
+               <input type="email" placeholder="abcd@example.com">
+               <br><br>
+               <label>Password:</label>
+               <input type="password" placeholder="Enter your password">
+               <br><br>
+               <input type="checkbox">
+               <span class=form-span>Remember me</span>
+               <br><br>
+               <button class="login">Login</button>
+              </div>
+            </form>
+          </div>
+          <!--modal end-->
+        </div>
+      </div>
+    </div>
+    <!--End of notification and search section-->
+
+    <!--navbar section start-->
+    <div class="navbar" id="mynav"> 
+      <a href="#" class="active">Home</a> 
+      <a href="#">Products</a>
+      <a href="#">Interior Decor</a>
+      <a href="#">Exterior Decor</a>
+      <a href="#">Experts</a>
+      <a href="#">Contact Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!--navbar section end-->
+
+    <!--offer section start-->
+    <div class="container-fluid offer">
+      <div>
+        <img src="ribbon.png" class="offer-ribbon" style="display: inline;">
+        <p class="offer-line" style="display: inline;">Great Discount on show-pieces and chandeliers</p>
+      </div>
+    </div>
+    <!--offer section end-->
+
+   <!--products section start-->
+   <div class="container product-container">
+     <!--first row start-->
+     <div class="row">
+        <div class="col-md-3 text-center">
+         <div class="thumbnail">
+           <a href="#" style="text-decoration: none;">
+             <div class="zoomin frame"><img src="furniture.png" class="product-icon"></div>
+             <div class="caption">
+               <p class="pros">Home Furniture</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+         <div class="thumbnail">
+           <a href="#" style="text-decoration: none;">
+             <div class="zoomin frame"><img src="elect.png" class="product-icon"></div>
+             <div class="caption">
+               <p class="pros">Chandelier and lamps</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+         <div class="thumbnail">
+           <a href="#" style="text-decoration: none;">
+             <div class="zoomin frame"><img src="pot.png" class="product-icon"></div>
+             <div class="caption">
+               <p class="pros">Plant and Flower's Container </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 text-center">
+         <div class="thumbnail">
+           <a href="#" style="text-decoration: none;">
+             <div class="zoomin frame"><img src="curtains.png" class="product-icon"></div>
+             <div class="caption">
+               <p class="pros">Furnishing </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--first row end-->
+
+      <!--second row start-->
+     <div class="row" style="padding-top: 2%;">
+       <div class="col-md-3">
+         <div class="thumbnail">
+           <a href="#" style="text-decoration: none;">
+             <div class="zoomin frame"><img src="sp.png" class="product-icon"></div>
+             <div class="caption">
+               <p class="pros">Showpieces</p>
+              </div>
+            </a>
+          </div>
+        </div>
+       <div class="col-md-3">
+          <div class="thumbnail">
+           <a href="#" style="text-decoration: none;">
+             <div class="zoomin frame"><img src="clock.png" class="product-icon"></div>
+             <div class="caption">
+               <p class="pros">Clocks</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+         <div class="thumbnail">
+           <a href="#" style="text-decoration: none;">
+             <div class="zoomin frame"><img src="frame.png" class="product-icon"></div>
+             <div class="caption">
+               <p class="pros">Decorative Frames </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+         <div class="thumbnail">
+           <a href="#" style="text-decoration: none;">
+             <div class="zoomin frame"><img src="bathroom.png" class="product-icon"></div>
+             <div class="caption">
+               <p class="pros">Bathroom Essentials</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--second row end-->
+    </div>
+   <!--product section end-->
+  
+   <!--slider container start-->
+   <div class="container-fluid p-0">
+        <div class="row" style="margin: 0;">
+         <div class="col-lg-3 idea-col p-0" style="margin: 0;">
+           <img src="idea.png" class="ideaimg">
+           <section>
+             <h2 class="getidea">
+               <span> Get Ideas!</span>
+              </h2>
+              <h3 class="idea-heading"> We provide you best ideas of your choice. Buy products and get them at your place with free shipping. </h3>
+            </section>
+            <section class="ready">
+             <span class="text1" data-text="Ready">ready</span>
+             <span class="gradient"></span>
+             <span class="spotlight"></span>
+            </section>
+          </div>
+          <div class="col-lg-9 p-0" style="margin: 0;">
+            <img src="slide4.jpg" class="mySlides">
+            <img src="slide3.jpg" class="mySlides">
+            <img src="slide2.jpg" class="mySlides">
+            <img src="slide1.jpg" class="mySlides">
+            <div class="start-button-div">
+             <button class="start-button"><b>Start Up<b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!--slider container end-->
+
+    <!--tiltable list start-->
+    <div class="container LIST">
+      <h2 style="color:#000066;" class="list-heading">💁 Design and Decorate your home according to occasions with 💞 love:</h2>
+      <h3 style="color: #333399;" class="list-heading"> 🤯 Ideas available for:</h3>
+      <div class="tilt">
+        <ul>
+          <li><a href="#">Decorations for Day to  Day Life</a></li>
+          <li><a href="#">Decorations for Marriage and Rituals</a></li>
+          <li><a href="#">Decoration for Birthday Celebrations</a></li>
+          <li><a href="#">Special decoration for couples</a></li>
+          <li><a href="#">Decorations for Festivals and Worships</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--tiltable list end-->
+
+    <!--design availabe for start-->
+    <div class="container-fluid designs">
+      <h5 class="designs-heading">Best designs avialable for:</h5>
+      <!--first row start-->
+      <div class="row design-row1">
+        <div class="col-md-3 ">
+          <div class="container overlay-container">
+           <figure><img src="kchn.jpg" class="designimg"></figure>
+           <figcaption class="designimg-caption"><a href="#">Kitchen Designs</a></figcaption>
+            <div class="overlay">
+              <div class="overlay-text"><a href="#">Kitchen Designs</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="container overlay-container">
+           <figure><img src="swmng.jpg" class="designimg"></figure>
+           <figcaption class="designimg-caption"><a href="#">SwimmingPool Designs</a></figcaption>
+           <div class="overlay">
+             <div class="overlay-text"><a href="#">SwimmingPool Designs</a></div>
+           </div>
+        </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="container overlay-container">
+           <figure><img src="bdrm.jpg" class="designimg"></figure>
+           <figcaption class="designimg-caption"><a href="#">BedRoom Designs</a></figcaption>
+            <div class="overlay">
+              <div class="overlay-text"><a href="#">BedRoom Designs</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="container overlay-container">
+           <figure><img src="stdrm.jpg" class="designimg"></figure>
+           <figcaption class="designimg-caption"><a href="#">StudyRoom Designs</a></figcaption>
+           <div class="overlay">
+             <div class="overlay-text"><a href="#">StudyRoom Designs</a></div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!--first row ends-->
+
+      <!--second row start-->
+      <div class="row design-row2">
+        <div class="col-md-3 ">
+          <div class="container overlay-container">
+           <figure><img src="trce.jpg" class="designimg"></figure>
+           <figcaption class="designimg-caption"><a href="#">Terrace Designs</a></figcaption>
+           <div class="overlay">
+             <div class="overlay-text"><a href="#">Terrace Designs</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="container overlay-container">
+           <figure><img src="blcny.jpg" class="designimg"></figure>
+           <figcaption class="designimg-caption"><a href="#">Balcony Designs</a></figcaption>
+           <div class="overlay">
+             <div class="overlay-text"><a href="#">Balcony Designs</a></div>
+           </div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="container overlay-container">
+           <figure><img src="bckyrd.jpg" class="designimg"></figure>
+           <figcaption class="designimg-caption"><a href="#">BackYard Designs</a></figcaption>
+           <div class="overlay">
+             <div class="overlay-text"><a href="#">BackYard Designs</a></div>
+           </div>
+          </div>
+        </div>
+        <div class="col-md-3 ">
+          <div class="container overlay-container">
+           <figure><img src="bthrm.jpg" class="designimg"></figure>
+           <figcaption class="designimg-caption"><a href="#">BathRoom Designs</a></figcaption>
+           <div class="overlay">
+             <div class="overlay-text"><a href="#">BathRoom Designs</a></div>
+           </div>
+          </div>
+        </div>
+      </div> 
+      <!--second row  ends-->
+    </div>
+    <!--design available for ends-->
+   
+    <!--why  homiiee description starts-->
+    
+    <div class="Container description">
+      <h4 class="why0">Why Homiiee?? </h4>
+      <h5 class="why1">Hommiiee provides you best home designing and decor ideas by well skilled and well known professionals.We provide you ISI certified electrical decor items,branded furnitureand many more superior quality products.We provide you a lot of choice to meet your different requirements.We provide special discount,gift vouchers to our regular clients.We provide the best for you.Hommiiee is a home itself where you can get everything you want.We regurlarly update to fulfill all of our client needs.This is the golden platform designed keeping in mind both professional and customers.  </h5>
+      <h4 class="why">Tips from Homiiee:</h4>
+      <h5 class="why2"><img src="bdicn.png" style="padding-right: 10px;">Bedroom</h5>
+      <h6 class="why3">Decorate and design your Bedroom to feel comfortable and relaxing.</h6>
+      <br>
+      <h5 class="why2"><img src="bticn.png" style="padding-right: 10px;">Bathroom</h5>
+      <h6 class="why3">Decorate and design your Bathroom to feel fresh and pleasant.</h6>
+      <br>
+      <h5 class="why2"><img src="kticn.png" style="padding-right: 10px;">Kitchen</h5>
+      <h6 class="why3">Decorate and design your Kitchen to feel foody and healthy.</h6>
+      <br>
+      <h5 class="why2"><img src="sticn.png" style="padding-right: 10px;">Studyroom</h5>
+      <h6 class="why3" style="padding-bottom: 45px;">Decorate and design your studyroom to feel like a library.</h6>
+    </div>
+    <!--why homiiee description ends-->
+
+    <!--first footer section start-->
+    <div class="container-fluid first-footer">
+      <!--first row starts-->
+      <div class="row">
+        <div class="col-sm-4 end">
+          <h6><i class="fas fa-home fa-2x" style="color: white;font-size: 1.47vw;">Homiiee </i></h6>
+          <p class="first-footer-para">About Us</p>
+          <p class="first-footer-para">Contact Us</p>
+          <p class="first-footer-para">Gift vouchers</p>
+          <p class="first-footer-para">Reviews</p>
+        </div>
+        <div class="col-sm-4 end1">
+          <h6 class="first-footer-heading">NEED AN ADVICE?</h6>
+          <p class="first-footer-para">Messaging : 56768</p>
+          <p class="first-footer-para">Calling : 012-74-2675</p>
+          <p class="first-footer-para">Live Chat</p> 
+        </div>
+        <div class="col-sm-4 end2">
+          <h6 class="first-footer-heading">OUR PARTNERS</h6>
+          <p class="first-footer-para">Funding partners</p>
+          <p class="first-footer-para">Product sellers</p>
+          <p class="first-footer-para">Brand partners</p>
+          <p class="first-footer-para"></p>
+        </div>
+      </div>
+      <!--first row ends-->
+
+      <!--second row starts-->
+      <div class="row">
+        <div class="col-sm-4 endk">
+          <h6 class="first-footer-heading">TOP-RATED BRANDS</h6>
+          <p class="first-footer-para">Ashley,Bernhardt,Drex</p>
+          <p class="first-footer-para">Rock & Hill,Nemo</p>
+          <p class="first-footer-para">Bentley,Koket,Brabbu</p>
+          <p class="first-footer-para">Aganta,Opal,Casio</p>
+        </div>
+        <div class="col-sm-4 end1k">
+          <h6 class="first-footer-heading">TOP-RATED PRODUCTS</h6>
+          <p class="first-footer-para">Chandeliers,Cupboards</p>
+          <p class="first-footer-para">Home Furniture</p>
+          <p class="first-footer-para">Lamps,Furniture cover</p>
+          <p class="first-footer-para">Curtains</p>
+        </div>
+        <div class="col-sm-4 end2">
+          <h6 class="first-footer-heading">DELIVERIES AVAILABLE TO:</h6>
+          <p class="first-footer-para">Chandigarh,Delhi,Mumbai,Lucknow</p>
+          <p class="first-footer-para">Gurgoan,Rohtak,Rewari,Jaipur</p>
+          <p class="first-footer-para">Pune,Gandhinagar,Chennai,Gaya</p>
+          <p class="first-footer-para">Surat,vishakhapatnam,Kolkata</p>
+        </div>
+      </div>
+      <!--second row ends-->
+    </div>
+    <!--first footer section end-->
+
+    <!--second footer section start-->
+    <div class="container-fluid second-footer">
+      <div class="row">
+        <div class="col-sm-4">
+          <h6 class="second-footer-heading">Download Homiiee app via:</h6>
+          <a href="#"><i class="fab fa-google-play store"> Google Play</i></a>
+          <a href="#"><i class="fab fa-microsoft store"> MS store</i></a>
+        </div>
+        <div class="col-sm-4">
+          <h6 class="second-footer-heading">Cards acceptable:</h6>
+          <a href="#"><img src="visa.png" class="cards"></a>
+          <a href="#"><img src="maestro.png" class="cards"></a>
+          <a href="#"><img src="mastercard.png" class="cards"></a>
+          <a href="#"><img src="american-express.png" class="cards"></a>
+          <a href="#"><img src="paypal.png" class="cards"></a>
+        </div>
+        <div class="col-sm-4">
+          <h6 class="second-footer-heading">Online payment via:</h6>
+          <a href="#"><img src="paytm.png" class="UPI"></a>
+          <a href="#"><img src="google-wallet.png" class="UPI"></a>
+          <a href="#"><img src="amazon.png" class="UPI"></a>
+          <a href="#"><img src="ebay.png" class="UPI"></a>
+          <a href="#"><img src="eway.png" class="UPI"></a>
+        </div> 
+      </div>
+    </div>
+    <!--second footer section end-->
+    
+    <!--social media section start-->
+    <div class="socialmedia">
+      <a href="#" class="fb"> <i class="fab fa-facebook-f fa-2x"></i></a>
+      <a href="#" class="youtube"> <i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#" class="insta"> <i class="fab fa-instagram fa-2x" style="color: red;"></i></a>
+      <a href="#" class="google"> <i class="fab fa-google fa-2x"></i></a>
+      <a href="#" class="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+    <!--social media section end-->
+
+    <!--Modal form script start-->
+    <script>
+      var modal = document.getElementById('modalLogin');
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+    <!--modal form script end-->
+      
+    <!--navbar script start-->
+    <script>
+      function navFunction() {
+      var x = document.getElementById("mynav");
+      if (x.className === "navbar") {
+          x.className += " responsive";
+      } else {
+          x.className = "navbar";
+      }
+      }
+    </script>
+    <!--navbar script end-->
+
+    <!--slider script start-->
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel()
+     {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) 
+        {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2200); 
+      }
+    </script>
+    <!--slider script end-->
+    
+  </body>
+</html>
