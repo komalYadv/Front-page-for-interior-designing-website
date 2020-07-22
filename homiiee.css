@@ -145,18 +145,20 @@ input[type=search]:focus{
 }
   
 .modal-content {
-    margin: 5% auto 15% auto;
+    margin: auto;
     border: 1px solid #888;
     width: 80%; 
 }
 
 .avatar{
-    width:30%;
+    width:25%;
     border-radius: 50%;
     margin-left: 30%;
 }
+
 .login{
-    margin-left: 28%;
+    margin-left: 30%;
+    margin-right:30%;
     padding: 2%;
     width:32%;
     border:1.5 px solid gray;
@@ -205,7 +207,7 @@ input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
 
 .close {
     position: absolute;
-    right: 25px;
+    right: 15px;
     top: 0;
     color: #000;
     font-size: 35px;
